@@ -1,42 +1,34 @@
-/* En este archivo escriban su CSS */
 
-/* Fonts */
-/* Importar aquí la font */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,700;1,300&family=Roboto+Condensed:ital,wght@1,300&display=swap');
 
-
-
-/* Aquí les dejamos como ayuda este "reset" en el cual ajustamos algunas propiedades
-*  cuyos valores asigna por defecto el navegador.
-*/
-
-/* Reset */
+Reset
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    /* Para que el scrolleo en la one page sea suave */
     scroll-behavior: smooth;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px
+}
+.header{
+    display: flex;
+    justify-content: space-around
+    }
+    .circular--portrait {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        overflow: hidden;
+        border-radius: 50%;
+      }
+h1{
+    text-align: center;
 }
 
-/* Para quitar los puntos a los items de listas */
-ul {
-    list-style: none;
-}
 
-/* Para que los enlaces hereden el color de texto y no tengan subrayado */
-a {
-    text-decoration: none;
-    color: inherit;
+footer{
+    background-color: blueviolet;
 }
-
-/* Este max-width es para que el contenido no se "estire" demasiado hacia los costados y
-*  el margin: auto; para tenerlo centrado fácilmente ;)
-*/
-main {
-    max-width: 1200px;
-    margin: auto;
-}
-
 /* Recomendaciones! 
 *  - Comenzar desde lo más general y luego ir hacia lo mas específico, asignando primero
 *    "estilos generales". Una buena idea sería comenzar por el <body> ;)
